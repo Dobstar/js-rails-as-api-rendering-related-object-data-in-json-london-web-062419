@@ -11,4 +11,14 @@ class SightingsController < ApplicationController
     else
         render json: { message: 'No sighting found with that id' }
     end
+    
+
+    #def show
+    #   sighting = Sighting.find_by(id: params[:id])
+    #   render json: sighting.to_json(:include => {
+    #     :bird => {:only => [:name, :species]},
+    #     :location => {:only => [:latitude, :longitude]}
+    #   }, :except => [:updated_at])
+    # end
+#the above method is also using the only and except method.
 end
