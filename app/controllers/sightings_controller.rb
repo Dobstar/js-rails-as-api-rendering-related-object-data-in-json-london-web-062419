@@ -20,5 +20,5 @@ class SightingsController < ApplicationController
     #     :location => {:only => [:latitude, :longitude]}
     #   }, :except => [:updated_at])
     # end
-#the above method is also using the only and except method.
+#the above method is also using the only and except method. This produces more specific data
 end
